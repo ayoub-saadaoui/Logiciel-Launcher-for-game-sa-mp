@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gotham Deathmatch | Launcher</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+  <div class="shade"></div>
+  <header class="topbar">
+    <div class="brand-mark">G<span>D</span></div>
+    <div class="brand-copy"><div class="server-name">GOTHAM <b>DEATHMATCH</b></div><div class="server-subtitle">SAN ANDREAS MULTIPLAYER</div></div>
+    <div class="top-status"><span class="status-dot"></span> OFFICIAL LAUNCHER</div>
+  </header>
+
+  <main class="content">
+    <section class="welcome">
+      <div class="eyebrow">WELCOME TO THE CITY</div>
+      <h1>YOUR CITY.<br><span>YOUR RULES.</span></h1>
+      <p>Verify your Discord account to access Gotham Deathmatch<br>and join the action.</p>
+
+      <div id="notVerified" class="auth-panel">
+        <div class="state-label"><span class="state-dot red"></span> NOT VERIFIED</div>
+        <a class="discord-button" href="/auth/discord">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.7 5.3A18.6 18.6 0 0 0 15.1 4l-.6 1.2a17 17 0 0 0-5 0L8.9 4a18.6 18.6 0 0 0-4.6 1.3C1.4 9.5.6 13.6 1 17.6a18.8 18.8 0 0 0 5.7 2.9l1.2-2a12 12 0 0 1-1.9-.9l.5-.4a13.4 13.4 0 0 0 11 0l.5.4a12 12 0 0 1-1.9.9l1.2 2a18.8 18.8 0 0 0 5.7-2.9c.5-4.6-.8-8.7-3.3-12.3ZM8.5 15.1c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm7 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z"/></svg>
+          LOGIN WITH DISCORD
+        </a>
+        <div id="authMessage" class="login-note">Discord login and Gotham membership are required.</div>
+      </div>
+
+      <div id="verified" class="auth-panel hidden">
+        <div class="state-label"><span class="state-dot green"></span> VERIFICATION DONE</div>
+        <div class="user-row">
+          <img id="avatar" class="avatar" alt="Discord avatar">
+          <div><b id="username">Discord user</b><small>Gotham member verified</small></div>
+        </div>
+        <button id="logoutBtn" class="logout-button" type="button">LOG OUT</button>
+        <div class="login-note">Your Discord account is connected.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div><span class="footer-line"></span> GOTHAM DEATHMATCH <span class="muted">/ OFFICIAL LAUNCHER</span></div><div class="footer-version">VERSION 1.1</div></footer>
+
+  <button id="connectBtn" class="connect-button hidden" type="button">
+    <span class="connect-icon">▶</span><span><b>CONNECT</b><small>JOIN THE SERVER</small></span>
+  </button>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body></html>
