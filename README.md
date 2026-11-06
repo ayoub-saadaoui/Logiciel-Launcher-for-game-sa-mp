@@ -1,5 +1,7 @@
+                Created by : Ayoub Saadaoui
+
 **Gotham Deathmatch Launcher** 
-              Created by : Ayoub Saadaoui
+
 
 is a modern desktop game launcher built with Electron, Node.js, JavaScript, and CSS. It features Discord integration through a hosted service, providing a connected gaming experience with a streamlined launcher interface.
 
